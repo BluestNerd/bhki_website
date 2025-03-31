@@ -1,0 +1,99 @@
+/* Mobile First Responsive Design */
+@media (max-width: 768px) {
+    /* General Styles */
+    .container {
+        width: 95%;
+    }
+    
+    /* Header */
+    header .container {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    
+    .logo {
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    
+    nav ul li {
+        margin: 5px 0;
+    }
+    
+    /* Hero Section */
+    .hero {
+        padding: 100px 0 60px;
+    }
+    
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /* Highlights */
+    .highlights .container {
+        flex-direction: column;
+    }
+    
+    .highlight-card {
+        margin: 10px 0;
+    }
+    
+    /* Framework Steps */
+    .framework-step {
+        margin-bottom: 30px;
+    }
+    
+    /* Activities Grid */
+    .activity-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Team Grid */
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Forms */
+    .contact-form {
+        padding: 20px;
+    }
+    
+    /* Footer */
+    footer .container {
+        flex-direction: column;
+    }
+    
+    .social-links {
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Tablet Styles */
+    .container {
+        width: 90%;
+    }
+    
+    .framework-step {
+        flex: 0 0 48%;
+    }
+    
+    .activity-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
