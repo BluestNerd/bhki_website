@@ -1,11 +1,13 @@
 /* Global Styles */
 :root {
-    --primary-color: #2c5e1a;
-    --secondary-color: #4a8c2a;
-    --accent-color: #6bbd46;
-    --light-color: #f8f9fa;
-    --dark-color: #343a40;
-    --text-color: #333;
+    --primary-blue: #0056b3;       /* Deep blue */
+    --secondary-blue: #007bff;     /* Vibrant blue */
+    --accent-gold: #FFD700;        /* Gold */
+    --light-gold: #FFF3B0;         /* Light gold */
+    --dark-blue: #003366;          /* Navy blue */
+    --light-blue: #E6F2FF;         /* Light blue background */
+    --text-dark: #333;
+    --text-light: #fff;
 }
 
 body {
@@ -184,4 +186,102 @@ footer {
 
 .social-links a:hover {
     color: var(--accent-color);
+}
+
+/* New styles for enhanced pages */
+
+/* Gold and blue theme elements */
+.gold-text { color: var(--accent-gold); }
+.blue-text { color: var(--secondary-blue); }
+.gold-bg { background-color: var(--accent-gold); color: var(--text-dark); }
+.blue-bg { background-color: var(--secondary-blue); color: var(--text-light); }
+.light-blue-bg { background-color: var(--light-blue); }
+
+/* Divider */
+.gold-divider {
+    height: 3px;
+    width: 100px;
+    background: var(--accent-gold);
+    margin: 15px auto;
+}
+
+/* Step cards */
+.step-card {
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.step-number {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+    opacity: 0.2;
+}
+
+/* Involvement cards */
+.opportunity-card, .engagement-card, .mentor-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.opportunity-card:hover, .engagement-card:hover, .mentor-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Funding table */
+.funding-table {
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+.funding-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.funding-table th, .funding-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.funding-table th {
+    background-color: var(--primary-blue);
+    color: white;
+}
+
+.funding-table tr.total {
+    font-weight: bold;
+    background-color: var(--light-blue);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .step-card {
+        padding: 20px 15px;
+    }
+    
+    .funding-table table {
+        font-size: 0.9rem;
+    }
 }
