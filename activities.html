@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities - BHKi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>BHKi</h1>
+                <p>Bioinformatics Hub of Kenya Initiative</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="approach.html">Our Approach</a></li>
+                    <li><a href="activities.html" class="active">Activities</a></li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Activities</h1>
+            <p>Workshops, conferences, and outreach programs</p>
+        </div>
+    </section>
+
+    <section class="activities">
+        <div class="container">
+            <div class="activity-grid">
+                <div class="activity-card">
+                    <h2>Workshops</h2>
+                    <div class="chart-container">
+                        <canvas id="workshopChart"></canvas>
+                    </div>
+                    <p>Our workshops focus on practical bioinformatics skills with hands-on training.</p>
+                    <a href="#workshops" class="btn small">Learn More</a>
+                </div>
+                
+                <div class="activity-card">
+                    <h2>Science Cafés</h2>
+                    <p>Regular meetups where members present projects and discuss bioinformatics topics.</p>
+                    <a href="#science-cafes" class="btn small">Learn More</a>
+                </div>
+                
+                <div class="activity-card">
+                    <h2>Campus Outreaches</h2>
+                    <ul class="outreach-list">
+                        <li>Chuka University, 2023 - 200 students</li>
+                        <li>MKU, 2022 - 100 students</li>
+                        <li>TUK, 2022 - 100 students</li>
+                        <li>UoN, 2023 - 50 students</li>
+                    </ul>
+                    <a href="#outreaches" class="btn small">Learn More</a>
+                </div>
+                
+                <div class="activity-card">
+                    <h2>BOSS Conference</h2>
+                    <p>Our annual conference bringing together bioinformatics enthusiasts across Africa.</p>
+                    <a href="#bosscon" class="btn small">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bosscon" class="bosscon">
+        <div class="container">
+            <h2>BOSSCon 2025</h2>
+            <p>We're planning our biggest conference yet in 2025! Building on the success of our 2022 conference that attracted participants from:</p>
+            <div class="country-stats">
+                <div class="country">
+                    <span class="percentage">32.9%</span>
+                    <span class="country-name">Kenya</span>
+                </div>
+                <div class="country">
+                    <span class="percentage">13.9%</span>
+                    <span class="country-name">Nigeria</span>
+                </div>
+                <div class="country">
+                    <span class="percentage">8.9%</span>
+                    <span class="country-name">South Africa</span>
+                </div>
+                <!-- More countries can be added -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <h3>BHKi</h3>
+                <p>bioinformaticshubofkenya@gmail.com</p>
+            </div>
+            <div class="social-links">
+                <a href="https://twitter.com/Bioinfohub_ke" target="_blank">Twitter</a>
+                <a href="https://bhki.org" target="_blank">Website</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/charts.js"></script>
+</body>
+</html>
