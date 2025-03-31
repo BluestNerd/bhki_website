@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved - BHKi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>BHKi</h1>
+                <p>Bioinformatics Hub of Kenya Initiative</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="approach.html">Our Approach</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="get-involved.html" class="active">Get Involved</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Get Involved</h1>
+            <p>Join our community and contribute to bioinformatics in Kenya</p>
+        </div>
+    </section>
+
+    <section class="involvement-options">
+        <div class="container">
+            <div class="involvement-tabs">
+                <button class="tab-btn active" data-tab="students">For Students</button>
+                <button class="tab-btn" data-tab="corporate">For Corporate & Execs</button>
+            </div>
+            
+            <div id="students" class="tab-content active">
+                <h2>How Students Can Contribute</h2>
+                <ol class="contribution-list">
+                    <li>
+                        <strong>Invite us</strong> to your institution for outreaches and career fairs
+                    </li>
+                    <li>
+                        <strong>Register</strong> to present in our science café program. All projects are welcome
+                    </li>
+                    <li>
+                        <strong>Suggest speakers</strong> and topics that you would like to listen to during our seminars
+                    </li>
+                    <li>
+                        <strong>Share</strong> your published research with us to share with our community
+                    </li>
+                    <li>
+                        <strong>Register to participate</strong> in our events and invite us to participate in yours
+                    </li>
+                </ol>
+            </div>
+            
+            <div id="corporate" class="tab-content">
+                <h2>How Corporate & Executives Can Contribute</h2>
+                <ol class="contribution-list">
+                    <li>
+                        <strong>Donate</strong> to support our projects such as campus outreaches
+                    </li>
+                    <li>
+                        <strong>Suggest</strong> to us institutions we can partner with to grow and reach a wider audience
+                    </li>
+                    <li>
+                        <strong>Suggest grants and funding opportunities</strong> we can pursue
+                    </li>
+                    <li>
+                        <strong>Recruit</strong> talented members of BHKi to your organization
+                    </li>
+                    <li>
+                        <strong>Offer space</strong> for training in your institutions
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Get Involved?</h2>
+            <p>Contact us today to discuss how you can contribute to our community</p>
+            <a href="contact.html" class="btn primary">Contact Us</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <h3>BHKi</h3>
+                <p>bioinformaticshubofkenya@gmail.com</p>
+            </div>
+            <div class="social-links">
+                <a href="https://twitter.com/Bioinfohub_ke" target="_blank">Twitter</a>
+                <a href="https://bhki.org" target="_blank">Website</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Tab functionality
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons and content
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                
+                // Add active class to clicked button and corresponding content
+                btn.classList.add('active');
+                document.getElementById(btn.dataset.tab).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
